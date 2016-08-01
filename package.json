@@ -7,7 +7,9 @@
   },
   "scripts": {
     "start": "node app.js",
-    "test": "mocha --reporter spec --timeout 5000"
+    "test": "mocha --reporter spec --timeout 5000",
+    "setupmongo": "sudo apt-get install -y mongodb-org && mkdir data && chmod a+x mongod",
+    "startmongo": "./mongod"
   },
   "dependencies": {
     "async": "^2.0.0",
